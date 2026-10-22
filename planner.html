@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Organize classes, assignments, and study sessions with Atoloye Ooreofe Deborah's interactive academic planner.">
+  <title>Academic Planner | Atoloye Ooreofe Deborah</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"><script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><nav class="nav-wrap" aria-label="Main navigation"><a class="brand" href="index.html"><span class="brand-mark">D</span><span>Deborah<span class="brand-dot">.</span></span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span class="sr-only">Toggle navigation</span><span></span><span></span><span></span></button><ul class="nav-links" id="primary-nav"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a class="active" aria-current="page" href="planner.html">Planner</a></li><li><a class="nav-contact" href="contact.html">Contact <span aria-hidden="true">↗</span></a></li></ul></nav></header>
+  <main id="main">
+    <section class="page-hero section-wrap planner-hero"><p class="eyebrow">YOUR SEMESTER, A LITTLE MORE ORGANIZED</p><h1>Make space for<br><span class="accent-text">what matters.</span></h1><p class="page-lede">Add an assignment, a study session, or a small next step. Your tasks stay saved in this browser.</p></section>
+    <section class="section-wrap planner-layout">
+      <div class="planner-side"><span class="planner-icon">✳</span><p class="eyebrow">A GENTLE REMINDER</p><h2>Progress over perfection.</h2><p>Big goals get easier when you break them into small, doable steps. Add one thing, then take it from there.</p><div class="planner-stats"><div><strong id="remaining-count">0</strong><span>TO DO</span></div><div><strong id="completed-count">0</strong><span>COMPLETED</span></div></div></div>
+      <div class="planner-board">
+        <form id="task-form" class="task-form">
+          <label for="task-input">What would you like to work on?</label>
+          <div class="task-input-row"><input id="task-input" name="task" type="text" maxlength="120" placeholder="e.g. Review notes for biology" required><button class="button button-dark" type="submit">Add task <span aria-hidden="true">+</span></button></div>
+          <p class="form-hint">Your list is saved on this device using local storage.</p>
+        </form>
+        <div class="task-toolbar"><h2>My tasks <span id="task-total" class="task-total">0</span></h2><button id="clear-completed" class="clear-button" type="button">Clear completed</button></div>
+        <ul id="task-list" class="task-list" aria-live="polite"></ul>
+        <p id="empty-state" class="empty-state">Nothing on your list yet. Add a task to get started ✨</p>
+        <p id="planner-status" class="sr-only" role="status"></p>
+      </div>
+    </section>
+    <section class="section-wrap planner-tip"><span>✦</span><p><strong>A little tip:</strong> Try adding a task that takes less than 15 minutes. Getting started is often the hardest part.</p></section>
+  </main>
+  <footer class="site-footer"><div class="section-wrap footer-inner"><a class="brand footer-brand" href="index.html"><span class="brand-mark">D</span><span>Deborah<span class="brand-dot">.</span></span></a><p>Made with curiosity and a cup of tea.</p><p>© <span data-year></span> Atoloye Ooreofe Deborah</p></div></footer>
+</body>
+</html>
